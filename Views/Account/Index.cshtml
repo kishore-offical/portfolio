@@ -1,0 +1,53 @@
+﻿@model ChatWe.ViewModels.ApplicationUser
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "ChatWe";
+}
+
+<link href="~/assets/css/message.css" rel="stylesheet" />
+<div class="container mt-5 chat-container">
+    <div class="card border-0 shadow p-4 rounded-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <button id="HomeBtn" class="btn btn-primary mt-3">Home</button>
+            <button class="text-center" style="border-radius: 34px;" disabled>
+                <strong>ChatWe</strong>
+            </button>            
+            @if (!string.IsNullOrEmpty(Model.EmailAddress))
+            {
+                <button class="btn btn-secondary" disabled>@($"{Model.FirstName} {Model.LastName}")</button>
+           
+            }
+        </div>
+        <div class="card-body">
+            <div id="message-container" class="message-container">
+                <!-- Display messages here -->
+            </div>
+        </div>
+        <div class="input-group message-input">
+            <input id="messageInput" type="text" class="form-control" placeholder="Type your message">
+            <div class="input-group-append">
+                <button id="sendMessageBtn" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        @{
+            var data = new { Model.UserId };
+            var serialize = Newtonsoft.Json.JsonConvert.SerializeObject(data);
+        }
+                var json = @Html.Raw(serialize);
+
+        document.addEventListener("DOMContentLoaded", ready);
+        
+        function ready() {
+            var messageOptions = {
+                receiver: json.UserId, 
+            }
+        $.Messages(messageOptions);
+        }
+
+</script>
+<script src="~/assets/scripts/message.js"></script>

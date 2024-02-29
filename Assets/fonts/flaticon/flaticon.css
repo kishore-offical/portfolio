@@ -1,0 +1,239 @@
+@font-face {
+	 font-family: "flaticon_benevolent";
+	 src: url("flaticon.woff") format("woff"), url("flaticon.woff2") format("woff2");
+}
+ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+	 font-family: flaticon_benevolent !important;
+	 font-style: normal;
+	 font-weight: normal !important;
+	 font-variant: normal;
+	 text-transform: none;
+	 line-height: inherit;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 vertical-align: middle;
+}
+ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+	 font-family: flaticon_benevolent !important;
+	 font-style: normal;
+	 font-weight: normal !important;
+	 font-variant: normal;
+	 text-transform: none;
+	 line-height: 1;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ .flaticon-mail:before {
+	 content: "\f101";
+}
+ .flaticon-password:before {
+	 content: "\f102";
+}
+ .flaticon-down:before {
+	 content: "\f103";
+}
+ .flaticon-layers:before {
+	 content: "\f104";
+}
+ .flaticon-location:before {
+	 content: "\f105";
+}
+ .flaticon-telephone:before {
+	 content: "\f106";
+}
+ .flaticon-search:before {
+	 content: "\f107";
+}
+ .flaticon-minus:before {
+	 content: "\f108";
+}
+ .flaticon-next:before {
+	 content: "\f109";
+}
+ .flaticon-back:before {
+	 content: "\f10a";
+}
+ .flaticon-facebook-outline:before {
+	 content: "\f10b";
+}
+ .flaticon-twitter:before {
+	 content: "\f10c";
+}
+ .flaticon-calendar:before {
+	 content: "\f10d";
+}
+ .flaticon-help:before {
+	 content: "\f10e";
+}
+ .flaticon-question-mark:before {
+	 content: "\f10f";
+}
+ .flaticon-dashboard:before {
+	 content: "\f110";
+}
+ .flaticon-category:before {
+	 content: "\f111";
+}
+ .flaticon-card:before {
+	 content: "\f112";
+}
+ .flaticon-maximize:before {
+	 content: "\f113";
+}
+ .flaticon-template:before {
+	 content: "\f114";
+}
+ .flaticon-star:before {
+	 content: "\f115";
+}
+ .flaticon-feature:before {
+	 content: "\f116";
+}
+ .flaticon-downloads:before {
+	 content: "\f117";
+}
+ .flaticon-plus:before {
+	 content: "\f118";
+}
+ .flaticon-tick:before {
+	 content: "\f119";
+}
+ .flaticon-close:before {
+	 content: "\f11a";
+}
+ .flaticon-arrow:before {
+	 content: "\f11b";
+}
+ .flaticon-envelope:before {
+	 content: "\f11c";
+}
+ .flaticon-internet:before {
+	 content: "\f11d";
+}
+ .flaticon-upload:before {
+	 content: "\f11e";
+}
+ .flaticon-image:before {
+	 content: "\f11f";
+}
+ .flaticon-edit:before {
+	 content: "\f120";
+}
+ .flaticon-credit-card:before {
+	 content: "\f121";
+}
+ .flaticon-danger:before {
+	 content: "\f122";
+}
+ .flaticon-facebook-filled:before {
+	 content: "\f123";
+}
+ .flaticon-link:before {
+	 content: "\f124";
+}
+ .flaticon-gift:before {
+	 content: "\f125";
+}
+ .flaticon-coding:before {
+	 content: "\f126";
+}
+ .flaticon-profile:before {
+	 content: "\f127";
+}
+ .flaticon-user-edit:before {
+	 content: "\f128";
+}
+ .flaticon-logout:before {
+	 content: "\f129";
+}
+ .flaticon-invoice:before {
+	 content: "\f12a";
+}
+ .flaticon-user-list:before {
+	 content: "\f12b";
+}
+ .flaticon-more:before {
+	 content: "\f12c";
+}
+ .flaticon-delete:before {
+	 content: "\f12d";
+}
+ .flaticon-user-info:before {
+	 content: "\f12e";
+}
+ .flaticon-id-card:before {
+	 content: "\f12f";
+}
+ .flaticon-smartphone:before {
+	 content: "\f130";
+}
+ .flaticon-crop:before {
+	 content: "\f131";
+}
+ .flaticon-zoom-in:before {
+	 content: "\f132";
+}
+ .flaticon-zoom-out:before {
+	 content: "\f133";
+}
+ .flaticon-rotate-left:before {
+	 content: "\f134";
+}
+ .flaticon-rotate-right:before {
+	 content: "\f135";
+}
+ .flaticon-copy:before {
+	 content: "\f136";
+}
+ .flaticon-suitcase:before {
+	 content: "\f137";
+}
+ .flaticon-approve-user:before {
+	 content: "\f138";
+}
+ .flaticon-block-user:before {
+	 content: "\f139";
+}
+ .flaticon-guarantee:before {
+	 content: "\f13a";
+}
+ .flaticon-add-photo:before {
+	 content: "\f13b";
+}
+ .flaticon-preview:before {
+	 content: "\f13c";
+}
+ .flaticon-tale:before {
+	 content: "\f13d";
+}
+ .flaticon-delete-account:before {
+	 content: "\f13e";
+}
+ .flaticon-block:before {
+	 content: "\f13f";
+}
+ .flaticon-need:before {
+	 content: "\f140";
+}
+ .flaticon-kid:before {
+	 content: "\f141";
+}
+ .flaticon-dollar:before {
+	 content: "\f142";
+}
+ .flaticon-users:before {
+	 content: "\f143";
+}
+ .flaticon-dollar-circle:before {
+	 content: "\f144";
+}
+ .flaticon-add-user:before {
+	 content: "\f145";
+}
+ .flaticon-share:before {
+	 content: "\f146";
+}
+ .flaticon-settings:before {
+	 content: "\f147";
+}
+ 

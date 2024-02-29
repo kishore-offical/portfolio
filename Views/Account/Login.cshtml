@@ -1,0 +1,83 @@
+﻿@model ChatWe.ViewModels.Login
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="d-flex align-items-center justify-content-center flex-column min-vh-100">
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "container" }))
+    {
+        <div class="row justify-content-center">
+            <div class="col-xs-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                <div class="text-center mb-5">
+                    <img src="@Url.Content("~/assets/images/logo.jpg")" alt="ChatWe" class="img-fluid" />
+                </div>
+                <div class="card border-0 shadow p-4 rounded-4">
+                    <div class="card-body">
+                        @Html.ValidationSummary(true, "", new { @class = "d-none" })
+
+                        <div class="mb-4">
+                            <div class="input-group">
+                                <div class="form-floating">
+                                    @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Email" })
+                                    @Html.LabelFor(m => m.EmailAddress, new { @class = "form-label" })
+                                </div>
+                                <span class="input-group-text">
+                                    <i class="flaticon-mail fs-4"></i>
+                                </span>
+                            </div>
+                            @Html.ValidationMessageFor(m => m.EmailAddress, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="input-group position-relative">
+                                <div class="form-floating">
+                                    @Html.PasswordFor(m => m.Password, new
+                                        {
+                                            @class = "form-control",
+                                            @id = "txtPassword",
+                                            placeholder = "Password"
+                                        })
+                                    @Html.LabelFor(m => m.Password, new { @class = "form-label", @id = "txtPassword" })
+                                </div>
+                                <span class="input-group-text">
+                                    <i class="flaticon-password fs-3"></i>
+                                </span>
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="d-grid gap-2 mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                SIGN IN
+                            </button>
+                            <div class="text-center fs-6">
+
+                                <a class="btn text-secondary" href="/Account/Register">SignUp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="modal fade" tabindex="-1" id="modalInfo">
+        <div class="modal-dialog position-fixed bottom-0 min-vw-100 m-0">
+            <div class="modal-content rounded-0">
+                <div class="modal-body bg-light">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-sm-11">
+                            <div id="notification" class="text-danger"></div>
+                        </div>
+                        <div class="col-2 col-sm-1 text-end">
+                            <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Toastr.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.0/signalr.min.js"></script>
+    <!-- Toastr.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="~/assets/images/favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="~/assets/images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap"
+          as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="~/assets/vendors/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="~/assets/fonts/flaticon/flaticon.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="~/assets/css/site.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap">
+        <link rel="stylesheet" href="~/assets/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/assets/fonts/flaticon/flaticon.css">
+        <link rel="stylesheet" href="~/assets/css/site.css" />
+    </noscript>
+    <style type="text/css">
+        .preloader {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 99999;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader"></div>
+    @RenderBody()
+
+    <script src="~/assets/vendors/bootstrap.min.js"></script>
+    <script src="~/assets/scripts/account.js"></script>
+    <script type="text/javascript">
+        //To avoid - While loading css asynchronously, Styles are not applied to page for some seconds
+        window.addEventListener("load", function (event) {
+            const preloader = document.querySelector('.preloader');
+            setTimeout(() => {
+                preloader.style.transition = 'opacity 0.5s';
+                preloader.style.opacity = '0';
+                preloader.style.zIndex = '-1';
+            }, 250);
+        });
+
+       
+    </script>
+
+</body>
+
+</html>
