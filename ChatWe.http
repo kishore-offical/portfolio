@@ -1,6 +1,0 @@
-@ChatWe_HostAddress = http://localhost:5221
-
-GET {{ChatWe_HostAddress}}
-Accept: application/json
-
-###
